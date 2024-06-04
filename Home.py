@@ -61,7 +61,7 @@ with col2:
                  basics of rocket science; concepts and principles of space systems; programming languages; 
                  3d modelling and simulation; processing and analyzing satellite imagery and scientific data; 
                  applying numerical and theoretical research methods to solving scientific and applied problems.""")
-        st.caption("Al-Farabi Kazakh National University, GPA: 3.45")
+        st.caption("Al-Farabi Kazakh National University")
         st.caption("Sep 2019 - June 2023")
         st.write("")
 
