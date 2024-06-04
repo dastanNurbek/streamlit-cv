@@ -19,23 +19,21 @@ with col1:
     st.write('🎓 Al-Farabi Kazakh National University')
     st.write('📧 [Email](mailto:dastan.nurbek22@gmail.com)')
     st.write('💼 [LinkedIn](https://www.linkedin.com/in/dastan-nurbekuly-1758362b3/)')
+    st.write("")
+    st.write("")
 
 with col2:
 
     with st.container():
         st.subheader("👋 Hi, I'm Dastan!")
-
-        subcol1, subcol2 = st.columns([2,1])
-        with subcol1:
-            st.write("👨‍💻 I'm a scholar of Copernicus Master in Digital Earth, in GeoData Science study track.")
-            st.write("")
-            st.write("🔭 My research interests are Satellite Data applications in Oceanography and Climate Change.")
-            st.write("")
-            st.write("🌊 I'm currently working on a paper about Wave Climate of Lake Alakol.")
-            st.write("")
-            st.write("🎮 I'm also interested in making video games in Unity Engine.")
-        with subcol2:
-            st.image('./images/usgs.jpg')
+        
+        st.write("👨‍💻 I'm a scholar of Copernicus Master in Digital Earth, in GeoData Science study track.")
+        st.write("")
+        st.write("🔭 My research interests are Satellite Data applications in Oceanography and Climate Change.")
+        st.write("")
+        st.write("🌊 I'm currently working on a paper about Wave Climate of Lake Alakol.")
+        st.write("")
+        st.write("🎮 I'm also interested in making video games in Unity Engine.")
     st.write("")
 
     with st.container():
@@ -56,16 +54,28 @@ with col2:
     with st.container():
         st.subheader("Education")
 
-        st.write("🛰️ **Bachelor of Technics and Technologies**, Space Engineering and Technologies")
-        st.write("""I learned fundamentals of mathematics, physics and mechanics; 
-                 basics of rocket science; concepts and principles of space systems; programming languages; 
-                 3d modelling and simulation; processing and analyzing satellite imagery and scientific data; 
-                 applying numerical and theoretical research methods to solving scientific and applied problems.""")
-        st.caption("Al-Farabi Kazakh National University")
-        st.caption("Sep 2019 - June 2023")
+        with st.container():
+            subcol1, subcol2 = st.columns([3,1])
+            with subcol1:
+                st.write("🛰️ **Bachelor of Technics and Technologies**, Space Engineering and Technologies")
+                st.write("""I learned fundamentals of mathematics, physics and mechanics; 
+                        basics of rocket science; concepts and principles of space systems; programming languages; 
+                        3d modelling and simulation; processing and analyzing satellite imagery and scientific data; 
+                        applying numerical and theoretical research methods to solving scientific and applied problems.""")
+                st.caption("Al-Farabi Kazakh National University")
+                st.caption("Sep 2019 - June 2023")
+            with subcol2:
+                st.image('./images/kaznu.png', width=100)
+            
         st.write("")
 
-        st.write("🌍 **Master of Science**, GeoData Science")
-        st.write("""Haven't yet started""")
-        st.caption("Paris Lodron University of Salzburg, Southern Brittany University")
-        st.caption("Sep 2024")
+        with st.container():
+            subcol1, subcol2 = st.columns([3,1])
+            with subcol1:
+                st.write("🌍 **Master of Science**, Geoinformatics and Data Science")
+                st.write("""Haven't yet started""")
+                st.caption("Paris Lodron University of Salzburg, Southern Brittany University")
+                st.caption("Sep 2024")
+            with subcol2:
+                st.image('./images/plus.jpeg', width=100)
+                st.image('./images/ibs.png', width=100)
